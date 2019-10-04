@@ -12,4 +12,8 @@ public class Cliente {
     this.nascimento = nascimento;
   }
   
+  public string imprimirCliente()
+  {
+    return $"{cpf} {nome}";
+  }
 }

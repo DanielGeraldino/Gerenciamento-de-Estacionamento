@@ -1,4 +1,6 @@
 using System;
+using System.Globalization;
+using System.Threading;
 
 class MainClass {
   public static void Main (string[] args) {
@@ -8,8 +10,10 @@ class MainClass {
     Estacionamento est = new Estacionamento(5, 5);
 
     est.locacaoVaga(carro, 1,1);
+    Thread.Sleep(60000);
 
-    est.imprimirCarros();
+    est.liberaVaga(1,1);
+
   }
     
 }
